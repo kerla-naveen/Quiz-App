@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="quiz-container">
+
+    <div id="start-screen" class="screen">
+      <h1>Welcome to the Quiz!</h1>
+      <button id="startBtn" class="btn">Start Quiz</button>
+    </div>
+
+         <button id="backBtn" class="nav-btn">← Back</button>
+
+      <div id="question-container" class="hidden">
+        <h2 id="question">Question text here</h2>
+        <ul id="options" class="options-list">
+          <!-- Options will be injected here -->
+        </ul>
+         <button id="nextBtn" class="btn" >Next Question →</button>
+      </div>
+    
+
+       <div id="result-container" class="hidden">
+           <p id="score-display"></p>
+            <button id="restartBtn" class="btn">restart</button>
+        </div>
+  </div>
+
+  <script src="functionality.js"></script>
+</body>
+</html>
